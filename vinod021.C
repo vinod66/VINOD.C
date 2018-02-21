@@ -3,7 +3,7 @@
 int main()
 {
 int n,i;
-clrscr();
+
 printf("enter the number",n);
 for(i=1;i<n;i++)
 {
