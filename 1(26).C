@@ -1,25 +1,30 @@
-#include<stdio.h>
-#include<conio.h>
-int main()
+#include <stdio.h>
+int max(int array[50],int n);
+int main(void) 
 {
-int m.,l,n;
-clrscr();
-scanf("%d",&n);
-int a[n];
-for(i=0;i<n;i++)
+	int array[50];
+	int i,result,n;
+	printf("no of elements in the array");
+	scanf("%d",&n);
+	printf("\narray\n");
+	for(i=0;i<n;i++)
+	{
+	scanf("%d",&array[i]);
+	printf("%d ",array[i]);
+	}
+	result=max(array,n);
+	printf("\n%d",result);
+	return 0;
+}
+int max(int array[50],int n)
 {
-scanf("%d",&a[i]);
-}
-m=a[0];
-for(int j=1;j<n;j++)
-{
-if(m<a[j])
-{
-a[j]=m;
-l=j+1;
-}
-printf("the location is ==%dthe min value is==%d",m,l);
-}
-return 0;
-getch();
-}
+	int i,mx=array[0];
+	for(i=1;i<n;i++)
+	{
+	scanf("%d",&array[i]);
+	if(array[i]>mx)
+	{
+		mx=array[i];
+	}
+	}
+	return (mx);
