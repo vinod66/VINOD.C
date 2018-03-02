@@ -17,6 +17,6 @@ else
 {
     printf("%c\n",s[i]);
 }
-getch(();
+getch();
 }
 
