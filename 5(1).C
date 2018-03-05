@@ -4,6 +4,7 @@ int main(void)
 {
 	int sthr,stmin,sphr,spmin;
 	int time,tmhr,tmmin;
+	clrscr();
 	scanf("%d",&sthr);
 	scanf("%d",&stmin);
 	scanf("%d",&sphr);
@@ -27,5 +28,5 @@ int main(void)
 	tmmin=time%60;
 	printf("\n The time difference=%d hr:%d min",tmhr,tmmin);
 	}
-	return 0;
+	
 	}
