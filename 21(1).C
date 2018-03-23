@@ -1,13 +1,16 @@
- #include<stdio.h>
- #include<conio.h>
-  int  main()
-    {
-    	int a=5,n,s;
-     clrscr();
-    	int b=4,c=5,d=6,e=7,f=8;
-    	n=b+c+d+e+f;
-    	s=n/5;
-    	printf("%d",s);
-      getch();
-   return 0;
-    }
+#include<stdio.h>
+#include<conio.h>
+
+int main(void) 
+{
+	int n1,n2,sum;
+ clrscr();
+	printf("\n enter the first number:");
+	scanf("%d",&n1);
+	printf("\n enter the second number:");
+	scanf("%d",&n2);
+	sum=n1+n2;
+	printf("%d",sum);
+	return 0;
+ getch ();
+}
