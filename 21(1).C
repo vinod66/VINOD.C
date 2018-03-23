@@ -1,6 +1,6 @@
  #include<stdio.h>
  #include<conio.h>
-    void main()
+  void main()
     {
     	int a=5,n,s;
      clrscr();
@@ -9,4 +9,5 @@
     	s=n/5;
     	printf("%d",s);
       getch();
+   return 0;
     }
